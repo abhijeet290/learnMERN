@@ -1,0 +1,1 @@
+console.log('hello and welcome to the Excithing journey of learning MERN-Stack')
