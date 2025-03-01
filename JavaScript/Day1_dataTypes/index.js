@@ -29,3 +29,4 @@ console.log(a, typeof a)
 // bigInt
 let bignum=746358375638462468468257258754278n
 console.log(bignum)
+console.log(typeof bignum)
