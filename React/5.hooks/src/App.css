@@ -1,0 +1,47 @@
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .count-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    width: 45%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .increment-btn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .decrement-btn {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .increment-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  .decrement-btn:hover {
+    background-color: #e91e63;
+  }

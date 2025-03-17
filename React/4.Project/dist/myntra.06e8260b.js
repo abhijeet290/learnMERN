@@ -2967,23 +2967,35 @@ function App() {
     _s();
     const [price, setPrice] = (0, _react.useState)("");
     const [filteredPrice, setFilteredPrice] = (0, _react.useState)(null);
+    const [A, setA] = (0, _react.useState)((0, _dummyDefault.default));
     const handleFilter = ()=>{
         setFilteredPrice(price);
+    };
+    const sortPrice = ()=>{
+        A.sort((a, b)=>a.price - b.price);
+        setA([
+            ...A
+        ]);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/myntra.js",
-                lineNumber: 25,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             (0, _dummy.greet)("Rahul"),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "src/myntra.js",
-                lineNumber: 27,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             (0, _dummy.meet)("10:00 AM"),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/myntra.js",
+                lineNumber: 33,
+                columnNumber: 28
+            }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 type: "number",
                 placeholder: "Enter price to filter",
@@ -2991,7 +3003,7 @@ function App() {
                 onChange: (e)=>setPrice(e.target.value)
             }, void 0, false, {
                 fileName: "src/myntra.js",
-                lineNumber: 29,
+                lineNumber: 34,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -2999,7 +3011,20 @@ function App() {
                 children: "Filter by Price"
             }, void 0, false, {
                 fileName: "src/myntra.js",
-                lineNumber: 35,
+                lineNumber: 40,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/myntra.js",
+                lineNumber: 40,
+                columnNumber: 62
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: sortPrice,
+                children: "sort by price"
+            }, void 0, false, {
+                fileName: "src/myntra.js",
+                lineNumber: 41,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -3016,28 +3041,28 @@ function App() {
                         price: value.price
                     }, index, false, {
                         fileName: "src/myntra.js",
-                        lineNumber: 49,
+                        lineNumber: 55,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "src/myntra.js",
-                lineNumber: 37,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/myntra.js",
-                lineNumber: 57,
+                lineNumber: 63,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(App, "r5URZ3ZbCAXZak7/tU7DhGiZVj0=");
+_s(App, "6C4zgDawUSIolfk5FaRCb0BsRWg=");
 _c = App;
 const Root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 Root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "src/myntra.js",
-    lineNumber: 63,
+    lineNumber: 69,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3048,7 +3073,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Card":"dP2hV","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/dummy":"46WgY"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Card":"dP2hV","./components/Footer":"8pPOA","./utils/dummy":"46WgY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 

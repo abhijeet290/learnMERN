@@ -15,9 +15,14 @@ import { greet as hello, meet as meeting } from "./utils/dummy";
 function App() {
   const [price, setPrice] = useState("");
   const [filteredPrice, setFilteredPrice] = useState(null);
+  const [A,setA]=useState(arr)
 
   const handleFilter = () => {
     setFilteredPrice(price);
+  };
+  const sortPrice = () => {
+    A.sort((a, b) => a.price - b.price);
+    setA([...A]);
   };
 
   return (
@@ -25,14 +30,15 @@ function App() {
       <Header />
       {hello("Rahul")}
       <br />
-      {meeting("10:00 AM")}
+      {meeting("10:00 AM")}<br/>
       <input
         type="number"
         placeholder="Enter price to filter"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
       />
-      <button onClick={handleFilter}>Filter by Price</button>
+      <button onClick={handleFilter}>Filter by Price</button><br/>
+      <button onClick={sortPrice}>sort by price</button>
 
       <div
         className="middle"
